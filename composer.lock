@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3ae6c7f986fe187f72efd950b6aeb38a",
-    "content-hash": "27b59cd3e0b60e4f8a9fdb156d8affc9",
+    "hash": "5ad323fc49260f7e331f0a4e59022165",
+    "content-hash": "2a5995b8f8fe3b18c1f9a2cf91efe8ec",
     "packages": [
         {
             "name": "marc-mabe/php-enum",
@@ -1385,6 +1385,8 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=7.0.0"
+    },
     "platform-dev": []
 }

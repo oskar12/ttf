@@ -1,4 +1,11 @@
 {
+  "name": "oskar12/ttf",
+  "version": "0.1.0",
+  "type": "library",
+  "description": "simple TTF implementation for job application",
+  "keywords": [],
+  "homepage": "https://github.com/oskar12/ttf",
+  "license": "MIT",
   "autoload": {
     "psr-0": {
       "TTF\\": "src/",
@@ -6,6 +13,7 @@
     }
   },
   "require" : {
+    "php" : ">=7.0.0",
     "marc-mabe/php-enum": "2.3.*"
   },
   "require-dev": {
