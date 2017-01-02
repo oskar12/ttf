@@ -16,12 +16,8 @@ $parameters = [
 ];
 
 $computer = new Computer($parameters, new BaseMapping());
-$computer->compute();
-
 var_dump($computer->getX(), $computer->getY());
 
 $computer2 = new Computer($parameters, new Specialized2Mapping());
-$computer2->compute();
-
 var_dump($computer2->getX(), $computer2->getY());
 
