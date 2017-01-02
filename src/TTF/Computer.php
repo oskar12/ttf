@@ -78,14 +78,14 @@ class Computer
     private function computeX() : string
     {
         $conditions = $this->mapping->getConditions();
+        $validatedParameters = $this->mapping->getValidatedParams();
         /** @var Condition $condition */
         foreach($conditions->getArray() as $condition)
         {
-
             $parameters = $condition->getParameterConditions();
             foreach($parameters as $key => $value)
             {
-                if ($this->params[$key] !== $value) {
+                if ($validatedParameters[$key] !== $value) {
                     continue 2;
                 }
             }

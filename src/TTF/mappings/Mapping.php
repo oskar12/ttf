@@ -15,6 +15,6 @@ interface Mapping
 
     public function getComputations() : array;
 
-    public function validateParams();
+    public function getValidatedParams() : array;
 
 }
