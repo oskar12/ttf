@@ -31,6 +31,23 @@ class BaseComputerTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($expectedY, $computer->getY());
     }
 
+    /**
+     * @expectedException \Exception
+     */
+    public function testBadParameters()
+    {
+        $parameters = ['a' => false, 'b' => false, 'c' => false, 'd' => 1, 'e' => 2, 'f' => 3];
+        new Computer($parameters, new BaseMapping());
+    }
+
+    /**
+     * @expectedException \Exception
+     */
+    public function testMissingParameter()
+    {
+        $parameters = ['a' => false, 'b' => false, 'd' => 1, 'e' => 2, 'f' => 3];
+        new Computer($parameters, new BaseMapping());
+    }
 
     public function dataProvider()
     {
