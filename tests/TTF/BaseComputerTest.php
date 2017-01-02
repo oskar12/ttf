@@ -26,7 +26,6 @@ class BaseComputerTest extends \PHPUnit_Framework_TestCase
     public function testComputations($parameters, $mapping, $expectedX, $expectedY)
     {
         $computer = new Computer($parameters, $mapping);
-        $computer->compute();
 
         $this->assertEquals($expectedX, $computer->getX());
         $this->assertEquals($expectedY, $computer->getY());

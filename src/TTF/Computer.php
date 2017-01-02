@@ -47,6 +47,7 @@ class Computer
         }
         $this->mapping = $mapping;
         $this->mapping->setParams($this->params);
+        $this->compute();
     }
 
     /**
@@ -65,7 +66,7 @@ class Computer
         return $this->y;
     }
 
-    public function compute()
+    private function compute()
     {
         $this->x = $this->computeX();
         $this->y = $this->computeY();
